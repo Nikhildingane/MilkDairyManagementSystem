@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3480BB59-79B9-4C88-80A1-8277C70CC32B}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Milk_Dairy_Management_System.My.MyApplication</StartupObject>
+    <RootNamespace>Milk_Dairy_Management_System</RootNamespace>
+    <AssemblyName>Milk Dairy Management System</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Milk Dairy Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Milk Dairy Management System.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_customer.Designer.vb">
+      <DependentUpon>add_customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add_customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="collect_milk.Designer.vb">
+      <DependentUpon>collect_milk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="collect_milk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReportMilkCollection.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportMilkCollection.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportUnpaid.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportUnpaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ReportFormReportUnpaid.Designer.vb">
+      <DependentUpon>ReportFormReportUnpaid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFormReportUnpaid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReportBillPaid.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportBillPaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomerBank.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomerBank.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportCustomer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCustomer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent_Main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIParent_Main.Designer.vb">
+      <DependentUpon>MDIParent_Main.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="common.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="payment.Designer.vb">
+      <DependentUpon>payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFormReportPaid.Designer.vb">
+      <DependentUpon>ReportFormReportPaid.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFormReportPaid.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFormCustomer.Designer.vb">
+      <DependentUpon>ReportFormCustomer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFormCustomer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFormCustomerBank.Designer.vb">
+      <DependentUpon>ReportFormCustomerBank.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFormCustomerBank.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportFormMilkCollection.Designer.vb">
+      <DependentUpon>ReportFormMilkCollection.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ReportFormMilkCollection.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="settings.Designer.vb">
+      <DependentUpon>settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update_delete_customer.Designer.vb">
+      <DependentUpon>update_delete_customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="update_delete_customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="users.Designer.vb">
+      <DependentUpon>users.vb</DependentUpon>
+    </Compile>
+    <Compile Include="users.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_customer.Designer.vb">
+      <DependentUpon>view_customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="view_customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="add_customer.resx">
+      <DependentUpon>add_customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="collect_milk.resx">
+      <DependentUpon>collect_milk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportMilkCollection.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportMilkCollection.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportUnpaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportUnpaid.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFormReportUnpaid.resx">
+      <DependentUpon>ReportFormReportUnpaid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportBillPaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportBillPaid.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomerBank.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomerBank.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportCustomer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCustomer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIParent_Main.resx">
+      <DependentUpon>MDIParent_Main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="payment.resx">
+      <DependentUpon>payment.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFormCustomer.resx">
+      <DependentUpon>ReportFormCustomer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFormCustomerBank.resx">
+      <DependentUpon>ReportFormCustomerBank.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFormReportPaid.resx">
+      <DependentUpon>ReportFormReportPaid.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportFormMilkCollection.resx">
+      <DependentUpon>ReportFormMilkCollection.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="settings.resx">
+      <DependentUpon>settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update_delete_customer.resx">
+      <DependentUpon>update_delete_customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="users.resx">
+      <DependentUpon>users.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_customer.resx">
+      <DependentUpon>view_customer.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baby-blue-solid.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\69c8734ae12303fe9cf295d423f494a0.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
